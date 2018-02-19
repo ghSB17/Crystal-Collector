@@ -10,12 +10,7 @@
     <script src="./assets/javascript/game.js"></script>
     
     <title>Week-4-Game</title>
-    <style>
-        .styleBtn {
-            margin-left: 0%;
-            margin-right: 0%;
-        }
-    </style>
+   
 </head>
 <body>
     <div class="jumbotron border bg-danger text-center">
@@ -23,27 +18,27 @@
         <h4>Click on the crystals to add points to your score and match the number on the screen</h4>
     </div>
     <div class="container">
-            <!-- style="padding-left:0%; padding-right:0%" -->
-        <div class="row" >
-            <div class="col-lg-3 h4 d-flex bg-primary" style="margin-left:1.5%;padding:1%;">
-                    <p class="card-subtitle h4">Number to match:</p>
-                    <h4 class="card-subtitle h4" id="idRandomNumber">00</h4>
+   
+        <div class="row d-flex" >
+            <div class="col-lg-2 bg-primary" style="margin-left:1.5%;padding:1%;">
+                    <p class="h4">Number to match:</p>
+                    <h4 class="h4" id="idRandomNumber">00</h4>
             </div>
             
-            <div class="col-lg-2 d-flex bg-info h4" style="margin-left:1%;padding:1%;">
-                <!-- <div class="card-body"> -->
-                  <p class="card-subtitle h4"> Your Total Score:</p>
-                  <p class="card-subtitle h4" id="idScore"> 0 </p>
-                <!-- </div> -->
+            <div class="col-lg-2 bg-danger" style="margin-left:1%;padding:1%;">
+        
+                  <p class="h4"> Your Total Score:</p>
+                  <p class="h4" id="idScore"> 0 </p>
+        
             </div>
 
-            <div class="col-lg-3 d-flex h4">
+            <div class="col-lg-4">
             </div>
 
-            <div class="col-lg-2 d-flex h4 bg-primary" style="margin-left:1%;padding:1%;">
-                <p class="card-subtitle h4" id="idWins">Wins: 0</p>
-                <p class="card-subtitle h4" id="idLoss">Loss: 0</p>
-                <p class="card-subtitle h4" id="idResult"></p>
+            <div class="col-lg-2 bg-primary" style="margin-left:1%;padding:1%;">
+                <p class="h4" id="idWins">Wins: 0</p>
+                <p class="h4" id="idLoss">Loss: 0</p>
+                <p class="h4" id="idResult"></p>
             </div>
 
         </div>
