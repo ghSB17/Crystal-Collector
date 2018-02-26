@@ -14,6 +14,11 @@ var vNewGame=true;
 
 function initializeScreen() {
 
+    var vScore=0;
+    var vWins=0;
+    var vLoss=0;
+    var vResult="";
+    
     vCrystalNum1=Math.floor(Math.random()*10)+2;
     vCrystalNum2=Math.floor(Math.random()*10)+2;
     vCrystalNum3=Math.floor(Math.random()*10)+2;
@@ -82,6 +87,10 @@ function checkScore() {
 
 }
 
+$('#btnReset').on("click", function(){
+    console.log("reset");
+    initializeScreen();
+} );
 
 initializeScreen();
 

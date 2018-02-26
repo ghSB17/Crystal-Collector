@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="./assets/javascript/game.js"></script>
     
-    <title>Week-4-Game</title>
-   
+    <link rel="icon" href="./assets/images/titleIMG.png">
+    <title>Crystal Collector</title>
+    <!-- background:linear-gradient(blue,lightseagreen,lightblue,pink,lightsalmon -->
 </head>
-<body>
-    <div class="jumbotron border bg-danger text-center">
+<body
+    style="background:linear-gradient(aliceblue,white,lightgray,gray);
+                font-weight:bolder;" >
+    <div class="jumbotron border bg-danger text-center" style="background-image:url('./assets/images/bg1.jpg');">
         <h1 class="txt-center">Crystal Collector</h1>
         <h4>Click on the crystals to add points to your score and match the number on the screen</h4>
     </div>
     <div class="container">
    
         <div class="row d-flex" >
-            <div class="col-lg-2 bg-primary" style="margin-left:1.5%;padding:1%;">
+            <div class="col-lg-2 col-md-2 col-sm-none bg-primary" style="margin-left:1.5%;padding:1%;">
                     <p class="h4">Number to match:</p>
                     <h4 class="h4" id="idRandomNumber">00</h4>
             </div>
             
-            <div class="col-lg-2 bg-danger" style="margin-left:1%;padding:1%;">
+            <div class="col-lg-2 col-md-2 col-sm-none bg-primary" style="margin-left:1%;padding:1%;">
         
                   <p class="h4"> Your Total Score:</p>
                   <p class="h4" id="idScore"> 0 </p>
@@ -35,7 +38,7 @@
             <div class="col-lg-4">
             </div>
 
-            <div class="col-lg-2 bg-primary" style="margin-left:1%;padding:1%;">
+            <div class="col-lg-2 col-md-2 col-sm-none bg-primary" style="margin-left:1%;padding:1%;">
                 <p class="h4" id="idWins">Wins: 0</p>
                 <p class="h4" id="idLoss">Loss: 0</p>
                 <p class="h4" id="idResult"></p>
@@ -46,24 +49,24 @@
     <br>
     <div class="container">
         <div class="row"> 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2">
                 <button class="crystal bg-info" data-crystal-number="1">
                     <img src="./assets/images/crystal1.png" alt="crystal_1">
                 </button>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2">
                 <button class="crystal bg-danger" data-crystal-number="2">
                     <img src="./assets/images/crystal2.png" alt="crystal_2">
                 </button>
             </div>
         <!-- <div class="col-lg-1" ></div> -->
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2">
                 <button class="crystal bg-info" data-crystal-number="3">
                     <img src="./assets/images/crystal3.png" alt="crystal_3">
                 </button>
             </div>
         <!-- <div class="col-lg-1" ></div> -->
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2">
                 <button class="crystal bg-info" data-crystal-number="4" style="background-color:#D2B4DE;">
                     <img src="./assets/images/crystal4.png " alt="crystal_4">
                 </button>
@@ -71,13 +74,12 @@
         </div>
     </div>
     <br><br><br>
-    
-    <!-- <div class="card bg-success rounded" style="width:15%; margin-left:8%; padding:1%; margin-bottom:10%">
-      <div class="card-body">
-        <p class="card-title h4"> Your Total Score:</p>
-        <p class="card-subtitle" id="idScore" style="width:4%"> 0 </p>
-      </div>
-    </div> -->
+
+    <div class="rounded" 
+        style="width:15%; margin-left:8%; padding:1%; margin-bottom:10%;">
+        <button type="button" class="btn" id="btnReset" 
+            style="background:linear-gradient(blue,white);"><h4>Reset</h4></button>
+    </div>
 
 </body>
 </html>
